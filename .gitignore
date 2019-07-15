@@ -1,3 +1,5 @@
 .stack-work/
 hs-test.cabal
 *~
+.idea
+*.iml
