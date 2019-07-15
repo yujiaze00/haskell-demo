@@ -1,13 +1,11 @@
-module Position
-  (
-    Position(Cartesian,Polar)
-  )where
+module Position (
+    module Position
+  ) where
 
-data Position = Cartesian Double Double -- 笛卡尔坐标
-              | Polar Double Double -- 极坐标
+data Position = Position {positionX :: Double, positionY :: Double} deriving Show
 
-instance Eq Position where
-    Cartesian x1 y1 == Cartesian x2 y2 = (x1 == x2) && (y1 == y2)
-    Polar x1 y1 == Polar x2 y2         = (x1 == x2) && (y1 == y2)
-    Cartesian x y == Polar a r         = (x == r * cos a) && (y == r * sin a)
-    Polar a r == Cartesian x y         = (x == r * cos a) && (y == r * sin a)
+getPositionX :: Position -> Double
+getPositionX (Position x _) = x
+
+setPositionX :: Double -> Position -> Position
+setPositionX x' p = p { positionX = x'}

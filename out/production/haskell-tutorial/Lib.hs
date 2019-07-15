@@ -15,11 +15,6 @@ doubleX x y = x * y
 test :: IO ()
 test = print $ head [1..10]
 
-testMultiWayIf :: Bool -> String
-testMultiWayIf b
-        | b == True = "a"
-        | b == False = "b"
-
 testParams :: (Num a) => (a -> a) -> a -> a -> a
 testParams f a b= f a * b
 
