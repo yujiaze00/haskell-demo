@@ -1,3 +1,3 @@
-# Changelog for hs-test
+# Changelog for haskell-test
 
 ## Unreleased changes

@@ -1,1 +1,1 @@
-# hs-test
+# haskell-test
