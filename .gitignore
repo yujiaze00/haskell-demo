@@ -2,3 +2,5 @@
 haskell-test.cabal
 *~
 /out/**
+.idea/
+haskell-test.iml
